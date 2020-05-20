@@ -1,0 +1,182 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'The Witcher';
+    src: url(../fonts/Thewitcher-jnOj.ttf);
+}
+@font-face {
+    font-family: 'Die Nasty';
+    src: url(../fonts/die\ nasty.ttf);
+}
+
+/*Globais*/
+body {
+    font-family: 'Die Nasty';
+    color: #dedbd3;
+    background-color: black;
+}
+
+div#interface {
+    width: 1400px;
+    margin-top: -20px;
+    margin-bottom: 0px;
+    margin: auto;
+}
+
+/*Menu*/
+nav#menu {
+    width: 1400px;
+    margin: auto;
+    border-bottom: thistle 1px groove;
+    border-spacing: 5px;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: darkred; 
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav#menu a {
+    color: white;
+    text-decoration: none;
+}
+
+nav#menu li:hover{
+    background-color: rgb(215, 0, 0);
+}
+
+nav#menu a:hover {
+    color: black;
+}
+
+/*Cabeçalho*/
+header#cabecalho_principal {
+    text-align: center;
+    border: 2px groove white;
+}
+header h1 {
+    font-size: 60px;
+    background-color:#800000;
+    text-shadow: black 3px 3px 8px;
+}
+
+/*Corpo*/
+section#corpo {
+    background: url(../images/leshen.jpg) no-repeat;
+    display: block;
+    float: left;
+    width: 1000px;
+    height: 500px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-right: 1px thistle groove;
+    padding-right: 20px;
+}
+
+section#corpo p {
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: black 2px 2px 5px;
+    color: white;
+}
+
+section#corpo-info ul {
+    display: block;
+    margin-left: 80px;
+    list-style: decimal;
+}
+
+section#corpo-info ul#lista-aventuras a {
+    text-decoration: none;
+    color: white;
+}
+
+section#corpo-info ul#lista-aventuras p {
+    text-align: justify;
+    text-indent: 10px;
+}
+
+section#corpo-info h1, section#corpo-material h1 {
+    font-size: 22px;
+    text-align: center;
+    text-shadow: black 2px 2px 1px;
+}
+
+section#corpo-material {
+    background: url(../images/library.jpg) no-repeat center;
+    width: 900px;
+    border: 1px solid rgba(red, green, blue, 0.1);
+    border-radius: 15px;
+    padding: 10px 10px 50px 10px;
+    margin: 10px auto 10px auto;
+}
+
+section#corpo-material a{
+    text-decoration: underline;
+    color: white;
+}
+
+section#corpo-material p {
+    width: 500px;
+    text-align: center;    
+}
+
+section#corpo-material div#basicos {
+    width: 500px;
+    border: darkred 3px inset;
+    border-radius: 15px;
+    margin: auto auto 10px auto;
+    background-color: black;
+}
+
+/*Formulário*/
+aside#lateral {
+    display: block;
+    float: right;
+    width: 320px;
+    padding: 20px;
+    padding-bottom: 100px;
+    margin-top: 30px;
+    border: 1px groove thistle;
+}
+
+aside#lateral form#formMesa legend {
+    font-size: 25px;
+    margin-top: 10px;
+    border-bottom: 1px solid white;
+}
+
+aside#lateral form#formMesa input#iEnviar {
+    display: block;
+    margin: 0px auto 0px auto;
+}
+
+/*Rodapé*/
+footer#direitos {
+    clear: both;
+    border-top: thistle 1px groove;
+}
+
+footer#direitos p {
+    font-size: 13px;
+    text-align: center;
+    font-style: italic;
+}

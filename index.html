@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Witcher RPG</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div id="interface">
+                <header id="cabecalho_principal">
+                    <hgroup>
+                        <h1>O MUNDO DE THE WITCHER</h1>
+                        <h2>"Um mal é um mal. Menor, maior, médio, tanto faz…" - Andrzej Sapkowski</h2>
+                    </hgroup>
+                </header>
+
+                <nav id="menu">
+                    <h1>Menu Principal</h1>
+                    <ul>
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="info.html">Informações</a></li>
+                        <li><a href="books.html">Adventure Books</a></li>
+                        <li><a href="material.html">Material</a></li>
+                    </ul>
+                </nav>
+
+            <section id="corpo">
+                <p>Bem-vindo à página oficial do RPG de The Witcher - O Medalhão!<br><br>
+                Recupere aqui o seu material essencial para participação na mesa de RPG de The Witcher, bem como acompanhe informações e leia os adventure books de lendas já vividas em nossa mesa. <br><br>
+                Ato atual: O Medalhão (1º).<br><br>
+                Preencha o formulário ao lado para realizar o seu registro na mesa.
+                </p>
+            </section>
+
+            <aside id="lateral">
+                <form method="POST" id="formMesa" action="mailto:kr4usdc@gmail.com">
+                    <legend>Dados Essenciais</legend>
+                    <p><label for="iPlayer">Nome:</label> <input type="text" name="nPlayer" id="iPlayer" size="30" maxlength="50" placeholder="Nome do Jogador"> </p>
+                    <p><label for="iIdade">Idade:</label> <input type="number" name="nIdade" id="iIdade" min="0" max="120" placeholder="Idade"></p>
+                    <p><label for="iContato">Contato(email):</label> <input type="text" name="nContato" id="iContato" size="30" maxlength="50" placeholder="Email do Jogador"></p>
+
+                    <legend>Dados de Personagem</legend>
+                    <p><label for="iChar">Nome:</label> <input type="text" name="nChar" id="iChar" size="30" maxlength="50" placeholder="Nome do Personagem"></p>
+                    <p><label for="iClasse">Classe:</label> 
+                        <select name="nClasse" id="iClasse">
+                            <option value="CL">Clérigo</option>
+                            <option value="HA">Homem de ARmas</option>
+                            <option value="LA">Ladrão</option>
+                            <option value="MA">Mago</option>
+                            <option value="BR">Bruxo</option>
+                        </select></p>
+                    <p><label for="iRaca">Raça:</label>
+                        <select name="nRaca" id="iRaca">
+                            <option value="HU">Humano</option>
+                            <option value="EL">Elfo</option>
+                            <option value="AN">Anão</option>
+                            <option value="NI">Ananico</option>
+                        </select></p>
+                    <p><input type="submit" name="nEnviar" id="iEnviar"></p>
+                </form>
+            </aside>
+
+            <footer id="direitos">
+                <p>Todos os direitos reservados a Andrzej Sapkowski, autor da Saga do Bruxo Geralt de Rívia.<br>
+                Complemento de Old Dragon RPG criado por Lobo Loss.<br>
+                Desenvolvido por Daniel Castro.</p>
+            </footer>
+
+        </div>
+    </body>
+</html>
